@@ -137,7 +137,7 @@ Available results depend on enabled settings, game state and executor API suppor
 
 Dump Explorer checks for supported executor APIs at startup. Features that require unavailable APIs may be disabled while other systems continue to run.
 
-**Tested executors:** Delta · Synapse X · Fluxus · Wave
+**Tested executors:** Delta · Potassium 
 
 Compatibility may vary by executor version and game behavior.
 
