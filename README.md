@@ -1,304 +1,154 @@
-::: {align="center"}
-`<img src="https://cdn.imgup.com.br/mH58zUfEeB8sPUv1HUZBZs.webp" width="720" alt="Dump Explorer">`{=html}
+<div align="center">
 
-# DUMP EXPLORER
+<img src="https://cdn.imgup.com.br/mH58zUfEeB8sPUv1HUZBZs.webp" width="720" alt="Dump Explorer">
+
+# Dump Explorer
 
 **Explore. Analyze. Develop.**
 
-A runtime intelligence tool built for Roblox developers and AI-assisted
-script development.
+A runtime intelligence tool for Roblox developers and AI-assisted script development.
 
-`<br>`{=html}
+[![Open Source](https://img.shields.io/badge/OPEN%20SOURCE-FFD43B?style=for-the-badge&logo=github&logoColor=black)](https://github.com/)
+[![Roblox](https://img.shields.io/badge/ROBLOX-111111?style=for-the-badge&logo=roblox&logoColor=white)](https://www.roblox.com/)
+[![AI Assisted](https://img.shields.io/badge/AI%20ASSISTED-FFD43B?style=for-the-badge&logo=openai&logoColor=black)](https://github.com/)
 
-![Open
-Source](https://img.shields.io/badge/OPEN%20SOURCE-FFD43B?style=for-the-badge&logo=github&logoColor=black)
-![Roblox](https://img.shields.io/badge/ROBLOX-111111?style=for-the-badge&logo=roblox&logoColor=white)
-![AI
-Assisted](https://img.shields.io/badge/AI%20ASSISTED-FFD43B?style=for-the-badge&logo=openai&logoColor=black)
+[Overview](#overview) · [Features](#features) · [Installation](#installation) · [Output](#output) · [Settings](#settings) · [Community](#community)
 
-[Overview](#overview) · [Features](#features) ·
-[Installation](#installation) · [Output](#output) ·
-[Community](#community)
-:::
+</div>
 
-------------------------------------------------------------------------
+---
 
 ## Overview
 
-Dump Explorer scans Roblox games at runtime and transforms collected
-information into structured files.
+Dump Explorer scans a Roblox game at runtime and organizes the collected information into structured files.
 
-Its purpose is simple: **give AI models real game context to help
-developers build more accurate scripts.**
-
-Instead of relying on assumptions, AI can analyze actual game
-structures, remotes, modules, scripts and runtime data.
+The goal is to give AI models real game context — including remotes, modules, scripts and world data — so developers can build scripts with fewer assumptions.
 
 ## Features
 
-```{=html}
-<details open>
-```
-```{=html}
-<summary>
-```
-`<strong>`{=html}Game Exploration`</strong>`{=html}
-```{=html}
-</summary>
-```
--   Full service scanning
--   Remote and ModuleScript discovery
--   Module dependency analysis
--   NPC and world object discovery
--   Player state and inventory collection
-
-```{=html}
-</details>
-```
-```{=html}
-<details>
-```
-```{=html}
-<summary>
-```
-`<strong>`{=html}Script Analysis`</strong>`{=html}
-```{=html}
-</summary>
-```
--   Script decompilation
--   Automatic retry system
--   Script-to-Remote mapping
--   Dispatcher analysis
--   Automatic hook script generation
-
-```{=html}
-</details>
-```
-```{=html}
-<details>
-```
-```{=html}
-<summary>
-```
-`<strong>`{=html}Network Analysis`</strong>`{=html}
-```{=html}
-</summary>
-```
--   Live outgoing hooks
--   Incoming event capture
--   Remote call logging
--   Argument inspection
--   RakNet analysis
-
-```{=html}
-</details>
-```
-```{=html}
-<details>
-```
-```{=html}
-<summary>
-```
-`<strong>`{=html}Performance & Reliability`</strong>`{=html}
-```{=html}
-</summary>
-```
--   Fast Mode
--   Fast Save
--   Checkpoint and Resume
--   Crash Guard
--   Asynchronous write queue
-
-```{=html}
-</details>
-```
-
-------------------------------------------------------------------------
+| Category | Included systems |
+|---|---|
+| **Game Exploration** | Service scanning, remote discovery, module discovery, dependency analysis, NPC and world object discovery, player state and inventory |
+| **Script Analysis** | Script decompilation, automatic retries, script-to-remote mapping, dispatcher analysis, hook script generation |
+| **Network Analysis** | Live hooks, incoming event capture, remote call logging, argument samples, RakNet analysis |
+| **Performance** | Fast Mode, Fast Save, checkpoint and resume, crash guard, asynchronous write queue |
 
 ## How It Works
 
-::: {align="center"}
-**01 --- SCAN**
+<div align="center">
 
-Collect game structures and runtime information.
+| 01 · SCAN | 02 · ANALYZE | 03 · EXPORT | 04 · DEVELOP |
+|:---:|:---:|:---:|:---:|
+| Collect game data | Inspect available information | Generate organized files | Use the dump as AI context |
 
-↓
-
-**02 --- ANALYZE**
-
-Inspect scripts, modules, remotes and network activity.
-
-↓
-
-**03 --- EXPORT**
-
-Organize everything into structured files.
-
-↓
-
-**04 --- DEVELOP**
-
-Give the generated dump to an AI model and start developing.
-:::
-
-------------------------------------------------------------------------
+</div>
 
 ## Installation
 
-Execute Dump Explorer inside a Roblox game using a compatible executor.
+Run Dump Explorer inside a Roblox game using a compatible executor.
 
-``` lua
+```lua
 loadstring(game:HttpGet("YOUR_RAW_URL_HERE"))()
 ```
 
 ### Quick Start
 
-1.  Execute the script.
-2.  Open the **Settings** tab.
-3.  Configure your scan options.
-4.  Open **Run** and press `Start Dump`.
-5.  Wait until `Dump Completed` appears.
-6.  Find the generated `INFORMATION/` folder.
+1. Execute the script.
+2. Open the **Settings** tab and configure the scan.
+3. Open the **Run** tab and select **Start Dump**.
+4. Wait until **Dump Completed** appears.
+5. Find the generated `INFORMATION/` folder in your executor workspace.
+6. Compress the game folder into a `.zip` and upload it to your AI tool.
 
-Compress the generated game folder into a `.zip` and upload it to your
-AI tool.
-
-For detailed instructions, check [USAGE.md](./USAGE.md).
-
-------------------------------------------------------------------------
+For detailed instructions, see [USAGE.md](./USAGE.md).
 
 ## Output
 
-All collected information is organized inside `INFORMATION/`.
+Collected information is saved inside `INFORMATION/`.
 
-```{=html}
-<details open>
-```
-```{=html}
-<summary>
-```
-`<strong>`{=html}Remote & Network`</strong>`{=html}
-```{=html}
-</summary>
-```
-  File                     Description
-  ------------------------ ------------------------------
-  `REMOTE_MAP.txt`         Remote paths and call counts
-  `NET_REMOTES.txt`        Remote index by service
-  `CALL_LOG.txt`           Captured remote calls
-  `SCRIPT_TO_REMOTE.txt`   Script relationships
-  `RAKNET_ANALYSIS.txt`    Network analysis
-
-```{=html}
-</details>
-```
-```{=html}
 <details>
-```
-```{=html}
-<summary>
-```
-`<strong>`{=html}Scripts & Modules`</strong>`{=html}
-```{=html}
-</summary>
-```
-  File                        Description
-  --------------------------- -------------------------
-  `GAME_MODULES.txt`          Discovered modules
-  `MODULE_DEPENDENCIES.txt`   Module dependency graph
-  `DISPATCHER_ACTIONS.txt`    Dispatcher patterns
-  `HOOK_SCRIPTS/`             Generated hook scripts
+<summary><strong>Remote & Network</strong></summary>
 
-```{=html}
+| File | Description |
+|---|---|
+| `REMOTE_MAP.txt` | Remote paths, classes and call counts |
+| `NET_REMOTES.txt` | Remotes indexed by service |
+| `CALL_LOG.txt` | Captured remote calls and argument samples |
+| `SCRIPT_TO_REMOTE.txt` | Script-to-remote relationships |
+| `RAKNET_ANALYSIS.txt` | Network traffic analysis |
+| `WORKSPACE_REMOTES.txt` | Remotes found in Workspace |
+
 </details>
-```
-```{=html}
+
 <details>
-```
-```{=html}
-<summary>
-```
-`<strong>`{=html}Game & Player`</strong>`{=html}
-```{=html}
-</summary>
-```
-  File                    Description
-  ----------------------- -------------------------------
-  `GAME_CONTEXT.txt`      Game and executor information
-  `ENEMIES_CATALOG.txt`   NPC and enemy catalog
-  `TOOLS_INVENTORY.txt`   Player tool inventory
-  `PLAYER_STATE.txt`      Player state and attributes
-  `WORLD_ITEMS.txt`       World object information
-  `INDEX.txt`             Master dump index
+<summary><strong>Scripts & Modules</strong></summary>
 
-```{=html}
+| File | Description |
+|---|---|
+| `GAME_MODULES.txt` | Discovered ModuleScripts and paths |
+| `MODULE_DEPENDENCIES.txt` | Module require dependency graph |
+| `DISPATCHER_ACTIONS.txt` | Dispatcher and action patterns |
+| `HOOK_SCRIPTS/` | Generated per-remote hook scripts |
+
 </details>
-```
-```{=html}
+
 <details>
-```
-```{=html}
-<summary>
-```
-`<strong>`{=html}Logs`</strong>`{=html}
-```{=html}
-</summary>
-```
-  File                  Description
-  --------------------- -------------------------------
-  `Logs/dump_log.txt`   Execution history
-  `Logs/failed.txt`     Failed decompilation attempts
+<summary><strong>Game & Player</strong></summary>
 
-```{=html}
+| File | Description |
+|---|---|
+| `GAME_CONTEXT.txt` | Game, place, job and executor information |
+| `ENEMIES_CATALOG.txt` | NPC and enemy models |
+| `TOOLS_INVENTORY.txt` | Local player's tool inventory |
+| `PLAYER_STATE.txt` | Player attributes and current state |
+| `WORLD_ITEMS.txt` | Tagged and notable world objects |
+| `INDEX.txt` | Master index of collected data |
+
 </details>
-```
 
-------------------------------------------------------------------------
+<details>
+<summary><strong>Logs</strong></summary>
 
-## Configuration
+| File | Description |
+|---|---|
+| `Logs/dump_log.txt` | Timestamped execution log |
+| `Logs/failed.txt` | Scripts that failed to decompile |
 
-Customize how Dump Explorer collects and processes information.
+</details>
 
-  Setting                 Purpose
-  ----------------------- ---------------------------------
-  Live Hooks              Capture outgoing remote calls
-  Incoming Hooks          Capture incoming events
-  RakNet Analysis         Analyze network activity
-  Skip Script Content     Skip script source collection
-  Skip Roblox Scripts     Ignore internal Roblox scripts
-  Fast Mode               Reduce scanning delays
-  Fast Save               Accelerate file writing
-  Soak Duration           Configure pre-scan waiting time
-  Max Decompile Retries   Configure retry attempts
-  UI Scale                Adjust interface size
+## Settings
 
-Feature availability depends on executor APIs and game behavior.
+| Setting | Purpose |
+|---|---|
+| **Enable Live Hooks** | Capture outgoing remote calls |
+| **Enable Incoming Hooks** | Capture incoming server-to-client events |
+| **RakNet Analysis** | Analyze low-level network traffic |
+| **Skip Script Content** | Skip saving script source content |
+| **Skip Roblox Scripts** | Ignore Roblox internal scripts |
+| **Fast Mode** | Reduce scanning yield intervals |
+| **Fast Save** | Flush file writes more aggressively |
+| **Soak Duration** | Set the pre-scan wait duration |
+| **Max Decompile Retries** | Set the retry limit for failed decompilation |
+| **UI Scale** | Adjust the interface size |
 
-------------------------------------------------------------------------
+Available results depend on enabled settings, game state and executor API support.
 
 ## Compatibility
 
-Dump Explorer uses executor APIs for scanning, hooking, decompilation
-and file operations.
+Dump Explorer checks for supported executor APIs at startup. Features that require unavailable APIs may be disabled while other systems continue to run.
 
-Some features may be unavailable depending on the executor.
+**Tested executors:** Delta · Synapse X · Fluxus · Wave
 
-**Tested executors:** - Delta - Synapse X - Fluxus - Wave
-
-------------------------------------------------------------------------
+Compatibility may vary by executor version and game behavior.
 
 ## Community
 
-::: {align="center"}
-### Found a bug? Have an idea?
+Found a bug or have a suggestion? Get in touch on Discord.
 
-Help improve Dump Explorer.
+<div align="center">
 
-[**JOIN OUR DISCORD**](https://discord.gg/GGuW36hfPm)
+[![Join our Discord](https://img.shields.io/badge/JOIN%20OUR%20DISCORD-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/GGuW36hfPm)
 
-------------------------------------------------------------------------
+**Open source. Built for developers. Designed for AI-assisted development.**
 
-**OPEN SOURCE PROJECT**
-
-Built for developers. Designed for AI-assisted development.
-:::
+</div>
