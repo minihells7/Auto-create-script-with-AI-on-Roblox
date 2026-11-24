@@ -60,7 +60,7 @@ loadstring(game:HttpGet("YOUR_RAW_URL_HERE"))()
 5. Find the generated `INFORMATION/` folder in your executor workspace.
 6. Compress the game folder into a `.zip` and upload it to your AI tool.
 
-For detailed instructions, see [How to Use](./How to Use).
+For detailed instructions, see [How to Use](./HOW_TO_USE.md).
 
 ## Output
 
