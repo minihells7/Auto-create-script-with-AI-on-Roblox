@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://cdn.imgup.com.br/ZtF8cKHaSXAyT0hUzzW7Sn.webp" width="490" alt="Dump Explorer">
+<img src="https://cdn.imgup.com.br/ZtF8cKHaSXAyT0hUzzW7Sn.webp" width="440" alt="Dump Explorer">
 
 # Dump Explorer
 
