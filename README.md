@@ -48,7 +48,7 @@ The goal is to give AI models real game context — including remotes, modules, 
 Run Dump Explorer inside a Roblox game using a compatible executor.
 
 ```lua
-loadstring(game:HttpGet("YOUR_RAW_URL_HERE"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/minihells7/Auto-create-script-with-AI-on-Roblox/refs/heads/main/ui/DumpExplorer.lua"))()
 ```
 
 ### Quick Start
